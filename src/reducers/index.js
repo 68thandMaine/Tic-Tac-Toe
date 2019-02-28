@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import historyReducer from './history-reducer'
+import historyReducer from './history-reducer';
 
 
 const rootReducer = combineReducers({

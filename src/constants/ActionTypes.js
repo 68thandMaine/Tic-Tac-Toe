@@ -1,1 +1,1 @@
-export const REMEMBER_MOVE = "REMEMBER_MOVE"
+export const REMEMBER_MOVE = 'REMEMBER_MOVE';
