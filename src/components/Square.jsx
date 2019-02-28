@@ -4,26 +4,16 @@ import PropTypes from 'prop-types';
 import c from './../constants';
 import {connect} from 'react-redux';
 
-class Square extends React.Component {
+ function Square(props){
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: null,
-    }
-  }
-
-  render() {
+  
     return (
-      <button 
-      className='square' 
-      onClick={() => this.setState({value: 'x'})}
-      >
-        {this.state.value}
+      <button className='square' 
+      onClick={props.onClick}>
+        {props.value}
       </button>
     );
-  }
-
+  
 }
 
 export default connect()(Square);
